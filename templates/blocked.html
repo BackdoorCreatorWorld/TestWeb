@@ -28,209 +28,13 @@
             width: 100%;
         }
         
-        /* BNN LOGO - CORRECT VERSION */
-        .bnn-logo {
-            margin: 0 auto 30px;
-            width: 350px;
-            position: relative;
-        }
-        
-        .garuda-shield {
-            width: 100%;
+        .bnn-svg {
+            width: 400px;
             height: auto;
+            margin: 0 auto 30px;
+            display: block;
         }
         
-        /* GARUDA WINGS */
-        .wing-left {
-            position: absolute;
-            top: 30px;
-            left: 20px;
-            width: 100px;
-            height: 150px;
-            background: linear-gradient(135deg, #8B4513, #CD853F);
-            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-            transform: rotate(-15deg);
-            border-radius: 50% 0 0 50%;
-            box-shadow: -5px 5px 10px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        
-        .wing-right {
-            position: absolute;
-            top: 30px;
-            right: 20px;
-            width: 100px;
-            height: 150px;
-            background: linear-gradient(225deg, #8B4513, #CD853F);
-            clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
-            transform: rotate(15deg);
-            border-radius: 0 50% 50% 0;
-            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        
-        /* GARUDA BODY */
-        .garuda-body {
-            position: relative;
-            width: 200px;
-            height: 220px;
-            background: #8B4513;
-            margin: 0 auto;
-            border-radius: 50% 50% 40% 40%;
-            top: 20px;
-            z-index: 2;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
-        
-        .garuda-head {
-            position: relative;
-            width: 120px;
-            height: 100px;
-            background: #CD853F;
-            margin: -30px auto 0;
-            border-radius: 50% 50% 30% 30%;
-            z-index: 3;
-            border: 3px solid #8B4513;
-        }
-        
-        .garuda-eye-left {
-            position: absolute;
-            top: 30px;
-            left: 25px;
-            width: 15px;
-            height: 20px;
-            background: white;
-            border-radius: 50%;
-            border: 2px solid black;
-        }
-        
-        .garuda-eye-right {
-            position: absolute;
-            top: 30px;
-            right: 25px;
-            width: 15px;
-            height: 20px;
-            background: white;
-            border-radius: 50%;
-            border: 2px solid black;
-        }
-        
-        .garuda-beak {
-            position: absolute;
-            top: 45px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 0;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-top: 30px solid #FFD700;
-        }
-        
-        /* SHIELD */
-        .shield {
-            position: relative;
-            width: 280px;
-            height: 240px;
-            background: #F5F5F5;
-            margin: -50px auto 0;
-            border: 5px solid #8B4513;
-            border-radius: 30% 30% 15% 15% / 40% 40% 10% 10%;
-            z-index: 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        .shield-content {
-            position: relative;
-            top: 40px;
-            text-align: center;
-        }
-        
-        .shield-text-top {
-            font-size: 24px;
-            font-weight: bold;
-            color: #8B4513;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-        }
-        
-        .shield-text-middle {
-            font-size: 36px;
-            font-weight: 900;
-            color: #8B4513;
-            margin: 10px 0;
-            letter-spacing: 8px;
-            border-top: 2px solid #8B4513;
-            border-bottom: 2px solid #8B4513;
-            padding: 10px 0;
-        }
-        
-        .shield-text-bottom {
-            font-size: 20px;
-            font-weight: bold;
-            color: #8B4513;
-            margin-top: 10px;
-        }
-        
-        .star {
-            width: 0;
-            height: 0;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-bottom: 30px solid #FFD700;
-            position: relative;
-            margin: 10px auto;
-        }
-        
-        .star:after {
-            content: '';
-            position: absolute;
-            top: 10px;
-            left: -15px;
-            width: 0;
-            height: 0;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-top: 30px solid #FFD700;
-        }
-        
-        /* RIBS/SAYAP DETAIL */
-        .feather-left {
-            position: absolute;
-            width: 30px;
-            height: 60px;
-            background: #CD853F;
-            left: -20px;
-            top: 80px;
-            border-radius: 50%;
-            transform: rotate(-10deg);
-            box-shadow: -2px 2px 5px rgba(0,0,0,0.2);
-        }
-        
-        .feather-right {
-            position: absolute;
-            width: 30px;
-            height: 60px;
-            background: #CD853F;
-            right: -20px;
-            top: 80px;
-            border-radius: 50%;
-            transform: rotate(10deg);
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-        }
-        
-        /* BNN TEXT ON SHIELD */
-        .bnn-shield-text {
-            font-size: 48px;
-            font-weight: 900;
-            color: #8B4513;
-            position: relative;
-            top: 60px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-            letter-spacing: 10px;
-        }
-        
-        /* BAD GATEWAY */
         .error-502 {
             font-size: 8em;
             font-weight: 900;
@@ -250,83 +54,45 @@
             padding: 15px 40px;
             border-radius: 60px;
             letter-spacing: 3px;
+            animation: pulse 2s infinite;
         }
         
-        .bnn-footer {
-            font-size: 2em;
-            font-weight: bold;
-            color: #333;
-            margin: 30px 0 20px;
-        }
-        
-        .bnn-sub {
-            font-size: 1.2em;
-            color: #666;
-            margin: 10px 0;
-        }
-        
-        hr {
-            margin: 40px 0 30px;
-            border: none;
-            border-top: 3px dashed #d32f2f;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .warning-text {
-            font-size: 1.1em;
-            color: #d32f2f;
-            margin-top: 20px;
-            font-weight: bold;
-        }
-        
-        /* ANIMATION */
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
         
-        .bad-gateway {
-            animation: pulse 2s infinite;
+        hr {
+            margin: 40px auto;
+            border: none;
+            border-top: 3px dashed #d32f2f;
+            width: 70%;
+        }
+        
+        .footer {
+            font-size: 1.5em;
+            color: #333;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        
+        .warning {
+            font-size: 1.2em;
+            color: #d32f2f;
+            font-weight: bold;
+            margin-top: 30px;
+            padding: 10px;
+            border: 2px solid #d32f2f;
+            display: inline-block;
+            border-radius: 40px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- BNN LOGO - CORRECT VERSION -->
-        <div class="bnn-logo">
-            <!-- Garuda dengan sayap -->
-            <div class="wing-left"></div>
-            <div class="wing-right"></div>
-            
-            <!-- Shield -->
-            <div class="shield">
-                <div class="shield-content">
-                    <div class="shield-text-top">BADAN</div>
-                    <div class="shield-text-middle">NARKOTIKA</div>
-                    <div class="shield-text-bottom">NASIONAL</div>
-                    
-                    <!-- Star -->
-                    <div class="star"></div>
-                    
-                    <!-- BNN inside shield -->
-                    <div class="bnn-shield-text">BNN</div>
-                </div>
-            </div>
-            
-            <!-- Garuda head above shield -->
-            <div class="garuda-head">
-                <div class="garuda-eye-left"></div>
-                <div class="garuda-eye-right"></div>
-                <div class="garuda-beak"></div>
-            </div>
-            
-            <!-- Feather details -->
-            <div class="feather-left"></div>
-            <div class="feather-right"></div>
-        </div>
+        <!-- BNN LOGO FROM SERVER -->
+        <img src="/bnn-logo" alt="BNN Logo" class="bnn-svg">
         
         <!-- ERROR 502 -->
         <div class="error-502">502</div>
@@ -334,12 +100,10 @@
         
         <hr>
         
-        <div class="bnn-footer">BADAN NARKOTIKA NASIONAL</div>
-        <div class="bnn-sub">REPUBLIK INDONESIA</div>
+        <div class="footer">BADAN NARKOTIKA NASIONAL</div>
+        <div class="footer">REPUBLIK INDONESIA</div>
         
-        <div class="warning-text">
-            ⚠️ AKSES DITOLAK • ACCESS DENIED ⚠️
-        </div>
+        <div class="warning">⚠️ AKSES DITOLAK • ACCESS DENIED ⚠️</div>
     </div>
 </body>
 </html>
