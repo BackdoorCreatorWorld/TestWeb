@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>502 BAD GATEWAY • BNN</title>
+    <title>502 BAD GATEWAY</title>
     <style>
         * {
             margin: 0;
@@ -23,87 +23,65 @@
         
         .container {
             text-align: center;
-            padding: 40px;
-            max-width: 900px;
+            padding: 20px;
+            max-width: 600px;
             width: 100%;
         }
         
-        .bnn-svg {
-            width: 400px;
-            height: auto;
+        /* GAMBAR BNN DARI LINK */
+        .bnn-logo-container {
             margin: 0 auto 30px;
+            width: 350px;
+            max-width: 90%;
+            height: auto;
+        }
+        
+        .bnn-logo {
+            width: 100%;
+            height: auto;
             display: block;
         }
         
-        .error-502 {
-            font-size: 8em;
-            font-weight: 900;
-            color: #d32f2f;
-            margin: 30px 0 10px;
-            text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
-        }
-        
+        /* BAD GATEWAY 502 - BESAR */
         .bad-gateway {
-            font-size: 3em;
-            font-weight: bold;
+            font-size: 3.5em;
+            font-weight: 900;
             color: #d32f2f;
             margin: 20px 0;
             text-transform: uppercase;
-            border: 4px solid #d32f2f;
-            display: inline-block;
-            padding: 15px 40px;
-            border-radius: 60px;
             letter-spacing: 3px;
-            animation: pulse 2s infinite;
+            line-height: 1.2;
+            word-break: break-word;
         }
         
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        
-        hr {
-            margin: 40px auto;
-            border: none;
-            border-top: 3px dashed #d32f2f;
-            width: 70%;
-        }
-        
-        .footer {
-            font-size: 1.5em;
-            color: #333;
-            margin: 15px 0;
-            font-weight: bold;
-        }
-        
-        .warning {
-            font-size: 1.2em;
+        .error-502 {
+            font-size: 2.5em;
+            font-weight: 700;
             color: #d32f2f;
-            font-weight: bold;
-            margin-top: 30px;
-            padding: 10px;
-            border: 2px solid #d32f2f;
-            display: inline-block;
-            border-radius: 40px;
+            margin-top: 10px;
+            letter-spacing: 2px;
+            opacity: 0.9;
         }
+        
+        /* TIDAK ADA ELEMENT LAIN - HANYA INI */
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- BNN LOGO FROM SERVER -->
-        <img src="/bnn-logo" alt="BNN Logo" class="bnn-svg">
+        <!-- GAMBAR BNN (ASLI) -->
+        <div class="bnn-logo-container">
+            <img src="https://files.catbox.moe/agw39x.txt" 
+                 alt="BNN Logo" 
+                 class="bnn-logo"
+                 onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22350%22 height=%22200%22><rect width=%22350%22 height=%22200%22 fill=%22%23f8f8f8%22/><text x=%22175%22 y=%22120%22 font-size=%2224%22 text-anchor=%22middle%22 fill=%22%238B4513%22>BNN</text></svg>'">
+        </div>
         
-        <!-- ERROR 502 -->
-        <div class="error-502">502</div>
+        <!-- HANYA BAD GATEWAY 502 - TANPA TEKS LAIN -->
         <div class="bad-gateway">BAD GATEWAY</div>
+        <div class="error-502">502</div>
         
-        <hr>
-        
-        <div class="footer">BADAN NARKOTIKA NASIONAL</div>
-        <div class="footer">REPUBLIK INDONESIA</div>
-        
-        <div class="warning">⚠️ AKSES DITOLAK • ACCESS DENIED ⚠️</div>
+        <!-- TIDAK ADA HR, TIDAK ADA FOOTER, TIDAK ADA WARNING -->
+        <!-- HANYA GAMBAR DAN TULISAN BAD GATEWAY 502 -->
     </div>
 </body>
 </html>
