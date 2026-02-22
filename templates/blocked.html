@@ -24,16 +24,17 @@
         .container {
             text-align: center;
             padding: 20px;
-            max-width: 600px;
+            max-width: 900px;
             width: 100%;
         }
         
-        /* GAMBAR BNN DARI LINK */
+        /* GAMBAR BNN ASLI - BUKAN TULISAN */
         .bnn-logo-container {
-            margin: 0 auto 30px;
-            width: 350px;
+            margin: 0 auto 40px;
+            width: 500px;
             max-width: 90%;
             height: auto;
+            background: transparent;
         }
         
         .bnn-logo {
@@ -42,46 +43,63 @@
             display: block;
         }
         
-        /* BAD GATEWAY 502 - BESAR */
-        .bad-gateway {
-            font-size: 3.5em;
-            font-weight: 900;
-            color: #d32f2f;
-            margin: 20px 0;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            line-height: 1.2;
-            word-break: break-word;
+        /* CONTAINER UNTUK TEKS - FLEX SEJAJAR HORIZONTAL */
+        .text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
         
-        .error-502 {
-            font-size: 2.5em;
+        /* BAD GATEWAY - UKURAN SEDANG */
+        .bad-gateway {
+            font-size: 2.2em;
             font-weight: 700;
             color: #d32f2f;
-            margin-top: 10px;
+            text-transform: uppercase;
             letter-spacing: 2px;
-            opacity: 0.9;
+            white-space: nowrap;
         }
         
-        /* TIDAK ADA ELEMENT LAIN - HANYA INI */
+        /* ANGKA 502 - UKURAN SAMA */
+        .error-502 {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #d32f2f;
+            letter-spacing: 2px;
+            white-space: nowrap;
+        }
+        
+        /* RESPONSIVE - TURUN KE BAWAH KALO LAYAR KECIL */
+        @media (max-width: 500px) {
+            .text-container {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .bad-gateway, .error-502 {
+                font-size: 1.8em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- GAMBAR BNN (ASLI) -->
+        <!-- GAMBAR BNN ASLI (BUKAN TULISAN BIASA) -->
         <div class="bnn-logo-container">
             <img src="https://files.catbox.moe/agw39x.txt" 
                  alt="BNN Logo" 
                  class="bnn-logo"
-                 onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22350%22 height=%22200%22><rect width=%22350%22 height=%22200%22 fill=%22%23f8f8f8%22/><text x=%22175%22 y=%22120%22 font-size=%2224%22 text-anchor=%22middle%22 fill=%22%238B4513%22>BNN</text></svg>'">
+                 onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22300%22><rect width=%22500%22 height=%22300%22 fill=%22%23f8f8f8%22/><text x=%22250%22 y=%22150%22 font-size=%2236%22 text-anchor=%22middle%22 fill=%22%238B4513%22>BNN</text></svg>'">
         </div>
         
-        <!-- HANYA BAD GATEWAY 502 - TANPA TEKS LAIN -->
-        <div class="bad-gateway">BAD GATEWAY</div>
-        <div class="error-502">502</div>
-        
-        <!-- TIDAK ADA HR, TIDAK ADA FOOTER, TIDAK ADA WARNING -->
-        <!-- HANYA GAMBAR DAN TULISAN BAD GATEWAY 502 -->
+        <!-- TEKS SEJAJAR HORIZONTAL: BAD GATEWAY 502 -->
+        <div class="text-container">
+            <span class="bad-gateway">BAD GATEWAY</span>
+            <span class="error-502">502</span>
+        </div>
     </div>
 </body>
 </html>
